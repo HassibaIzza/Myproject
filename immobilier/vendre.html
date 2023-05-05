@@ -1,0 +1,89 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ajouter une annonce d'immobilier</title>
+	<link rel="stylesheet" href="style2.css" type="text/css" >
+	<script src="https://kit.fontawesome.com/eace1766f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<style type="text/css">
+
+		
+	</style>
+
+
+<nav> 
+    				
+		         <a class="active "href="monSite1.html">Home</a>
+		         <a href="#">About Us</a>
+		         <a href="#">Contact</a>
+		         <a href="consulter.php">Immobiliers</a>
+		        
+  					</div>
+		         
+		              
+	</nav>
+ 			
+		<CENTER>	<h1><i></i></h1></CENTER>
+			<form  action="fiche.php" method="POST" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Ajouter Une Annonce D'immobilier:</legend>
+				
+				<label>Type</label>
+				<input type="text" class="control" name="type" id="type" required="required"  placeholder="le Type d'immobilliér" >
+
+				<label>Lieu</label>
+				<input type="text"class="control"  name="lieu"  id="lieu" required="required"placeholder="lieu d'immobilliér">
+
+				<label>Surface</label>
+				<input type="text" class="control" name="surface" id="surface" required="required" placeholder="Surface d'immobilliér" >
+
+				<label>Etat</label>
+				<input type="text"class="control"  name="etat" id="etat"required="required" placeholder="Etat d'immobilliér"> 
+
+				<label>Tél</label>
+				<input type="text" class="control" name="tel" id="tel" required="required" placeholder="Numero de telephone"pattern="^[0-9]+$">
+
+				<label>prix</label>
+				<input type="text" class="control" name="prix" id="prix" required="required" placeholder="prix d'immobilier">
+
+				<label>Description</label>
+				<textarea  cols="10" rows="4" class="control" name="commentaire" id="commentaire"  required="required" placeholder="Description" pattern="^[a-zA-Z]+$"></textarea><br><br>
+
+				<label>photos</label><br>
+				<input type="hidden" name="id">
+				<input type="file" class="control" name="files[]" size="100" multiple/>
+				<input type="hidden" name="MAX_FILE_SIZE" value="250000" /><br><br>
+			  
+			   <input type="submit"class="register" name="vendre" value="Upload"><br>
+
+			</fieldset>
+ 	
+			</form>
+
+
+
+
+	 <footer>
+       <P> Follow us : </P>
+      <a target="_blank"  href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+    <a target="_blank"  href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+    <a target="_blank" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a> 
+    <a target="_blank" href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a> 
+        	    	
+        	    <p><center>Copyright &copy; 2022 Your Compan</center></p>
+        	    	
+        	 </footer>
+
+
+</body>
+</html>
+
+

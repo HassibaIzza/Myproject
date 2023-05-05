@@ -1,0 +1,168 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>page de connexion </title>
+	<link rel="stylesheet" href="style2.css" type="text/css" >	
+	<script src="https://kit.fontawesome.com/eace1766f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	
+
+
+
+	
+	 <nav> 
+	 
+		<a class="active "href="monSite1.html">Home</a>
+    <a href="contactUs.php">contact</a>
+		<a href="connexion.html">Log In</a>
+		<a href="formulaire.html">Sign Up</a>
+	   
+		              
+	 </nav><BR><BR>
+
+ <center><form action="login.php" method="post">
+  <div class="imgcontainer">
+    <img src="avatar.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+  	<input type="hidden" name="id">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="mail" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="passw" required>
+
+    <button type="submit" name="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="sécurité.php?oublier">password?</a></span>
+  </div>
+</form></center> 	<br><br>
+ 
+
+	
+   <script language="javascript">
+   	e=true
+   	function changer(){
+   		if (e) {
+   			document.getElementsById("passw").setAttribute("type","text");
+   			document.getElementsById("eye").src="green_eye.png";
+   			e=false;
+   		}else{
+   			document.getElementsById("passw").setAttribute("type","password");
+   			document.getElementsById("eye").src="red_eye.png";
+   			e=true;
+   		}
+   	}
+   </script>
+
+   <style type="text/css">
+   	
+   	form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+   </style>
+
+   <footer>
+       <P> Follow us : </P>
+      <a target="_blank"  href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+    <a target="_blank"  href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+    <a target="_blank" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a> 
+    <a target="_blank" href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a> 
+        	    	
+        	    <p><center>Copyright &copy; 2022 Your Compan</center></p>
+        	    	
+        	 </footer>
+
+    
+
+		
+
+
+
+
+ 		
+
+			
+</body>
+</html>

@@ -1,0 +1,166 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	
+ <title>page de compte </title>
+  <link rel="stylesheet" href="style1.css" type="text/css" >
+	<style>
+.topnav .search-container {
+  float: right;
+}
+html{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.40),rgba(0, 0, 0, 0.40)),url(immobhome.jpg);
+  background-size: cover;
+  background-position: center;
+}
+button.outils{
+  height: 50px;
+  width:500px;
+  position: center;
+  background-color:  #75b1d1 ;
+  border-radius: 50px;
+  position: left ;
+ }
+
+ .topnav .search-container {
+  float: right; 
+
+}
+.topnav .search-container button {
+  float: left;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  width: 70px;
+  height: 40px;
+  border-radius: 50px;
+}
+nav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+	</style>
+
+  <script type="text/javascript">
+  
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+  
+  
+
+
+</head>
+<body>
+
+
+     <nav class="topnav">           
+              <a class="active "href="monSite.html" >Home</a>
+              <a href="#" >Contact</a>
+              <a href="#" >About Us</a>
+              <a href="immobilier.php" >Immobillier</a>
+              <a href="lgout.php" >Log out</a>
+              <div class="search-container" >
+              <form action="recherche.html" method="GET">
+              <!--<input type="Search"  name="search" placeholder="Search..">-->
+             <button type="submit" name="submit"><img src="search.png"></button>
+              </form>
+            </div>
+
+        </nav>		              
+	
+  <div id="mySidenav" class="sidenav">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.php?profile">photo de profile</a>
+
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+ 
+
+	<center><h1>Hello   </h1></center>
+
+	 <div class="compt"><center>
+	 <a href="ajouterFiche.html"><button class="outils"> ajouter une Fiche d'immobilier</button></a><br><br>
+	 <a href="immobilier.php"><button class="outils">Mes Biens </button></a><br><br>
+   <!--<a href="modifierSupp.php?modifier"><button class="outils"></button></a><br><br>-->
+	 <a href=""> <button class="outils">Consulter  </button></a><br><br>
+	 	</center></div>
+
+  <script type="text/javascript">
+    document.write("");
+  </script>
+
+
+	 <footer>
+    	   	<ul class="social">							
+    	   		<li class="facebook"><a href="www.facebook.com" >facebook:imob27</a></li><br>
+    	   		<li class="instagrame"><a href="www.instagrame.com" >Instagram:imob_27</a></li><br>
+    	   		<li class="twitter"><a href="www.twitter.com" >twitter</li></a>
+
+        	   	</ul>
+        	    	
+        	    <p><center>Copyright &copy; 2022 Your Compan</center></p>
+        	    	
+    </footer>
+
+
+
+
+</body>
+</html>
